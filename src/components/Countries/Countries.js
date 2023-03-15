@@ -22,7 +22,7 @@ const Countries = () => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.region_option}>
+      <div className={`${classes.region_option} ${classes.display}`}>
         <p>Filter by Continent</p>
         <select value={currentRegion} onChange={regionChangeHandler}>
           <option value="Asia">Asia</option>
@@ -34,17 +34,17 @@ const Countries = () => {
           <option value="Oceania">Oceania</option>
         </select>
       </div>
-      <div className={classes.region}>
+      <div className={`${classes.region} ${classes.display}`}>
         <div className={classes.region_map}>
           <img src={region.regionMap} alt={region.name} />
         </div>
-        <div className={classes.region_info}>
+        <div className={`${classes.region_info} ${classes.display}`}>
           <h2>{region.name}</h2>
           <span>{`Countries: (${region.totalCountries})`}</span>
           <span>{`Population: ${region.totalPopulation}`}</span>
         </div>
       </div>
-      <ul className={classes.countries}>
+      <ul className={`${classes.countries} ${classes.display}`}>
         {countries.map((country) => (
           <Country
             key={country.id}

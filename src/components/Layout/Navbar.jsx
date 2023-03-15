@@ -8,9 +8,9 @@ const Navbar = () => {
   const date = new Date();
   const year = date.getFullYear() || 2023;
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} ${classes.display}`}>
       <nav className={classes.nav}>
-        <ul className={classes.nav_items}>
+        <ul className={`${classes.nav_items} ${classes.display}`}>
           <li className={`${classes.nav_item} ${classes.back}`}>
             <NavLink to="/">
               <IoIosArrowBack />
@@ -18,8 +18,8 @@ const Navbar = () => {
               {year}
             </NavLink>
           </li>
-          <li className={`${classes.nav_item} ${classes.brand}`}><NavLink to="/"><h1>General Weather</h1></NavLink></li>
-          <li className={`${classes.nav_item} ${classes.actions}`}>
+          <li className={`${classes.nav_item}  ${classes.brand}`}><NavLink to="/"><h1>Weather Forecast</h1></NavLink></li>
+          <li className={`${classes.nav_item} ${classes.actions} ${classes.display}`}>
             <button type="button">
               <TiMicrophone />
               {' '}

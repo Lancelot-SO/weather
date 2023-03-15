@@ -1,12 +1,15 @@
 .country {
   padding: 0.5rem 1rem;
-  display: flex;
   width: 48%;
   flex-direction: column;
   position: relative;
   margin-bottom: 1rem;
   background: #d35443;
   transition: transform 0.1s ease-in-out;
+}
+
+.display {
+  display: flex;
 }
 
 .country:active {
@@ -33,7 +36,6 @@
   top: 0;
   left: 0;
   z-index: 1;
-  display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -52,7 +54,6 @@
 }
 
 .country_footer {
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }

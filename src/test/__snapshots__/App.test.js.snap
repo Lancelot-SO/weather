@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test app.js with pages should render the Details Page 1`] = `
+<h1>
+  Hello From Details Page
+</h1>
+`;
+
+exports[`Test app.js with pages should render the Header and Layout components 1`] = `
+<h1>
+  Weather Forecast
+</h1>
+`;
+
+exports[`Test app.js with pages should render the homepage 1`] = `
+<h1>
+  Hello From Home Page
+</h1>
+`;

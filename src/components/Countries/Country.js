@@ -7,11 +7,11 @@ import classes from './Country.module.css';
 const Country = ({
   name, capital, population, cc, flag, map,
 }) => (
-  <li className={classes.country}>
+  <li className={`${classes.country} ${classes.display}`}>
     <Link to={`/details/${cc}`}>
       <img className={classes.map} src={map} alt={name} />
       <div className={classes.country_info}>
-        <div className={classes.country_header}>
+        <div className={`${classes.country_header} ${classes.display}`}>
           <img className={classes.flag} src={flag} alt={name} />
           <span className={classes.arrowBtn}><FaArrowCircleRight /></span>
         </div>

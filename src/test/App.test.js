@@ -20,7 +20,7 @@ describe('Test app.js with pages', () => {
       </MemoryRouter>,
     );
     const txt = screen.getByText('Weather Forecast');
-    expect(txt).toBeInTheDocument();
+    expect(txt).toMatchSnapshot();
   });
 
   test('should render the homepage', () => {
@@ -33,7 +33,7 @@ describe('Test app.js with pages', () => {
       </MemoryRouter>,
     );
     const txt = screen.getByText('Hello From Home Page');
-    expect(txt).toBeInTheDocument();
+    expect(txt).toMatchSnapshot();
   });
 
   test('should render the Details Page', () => {
@@ -46,6 +46,6 @@ describe('Test app.js with pages', () => {
       </MemoryRouter>,
     );
     const txt = screen.getByText('Hello From Details Page');
-    expect(txt).toBeInTheDocument();
+    expect(txt).toMatchSnapshot();
   });
 });

@@ -41,13 +41,13 @@ const Details = () => {
         <div className={classes.map}>
           <img src={country.map} alt={country.name} />
         </div>
-        <div className={classes.weather}>
+        <div className={`${classes.weather} ${classes.display}`}>
           <h2>{weather.name}</h2>
           <img src={weather.icon} alt={weather.name} />
           <p>{weather.description}</p>
-          <ul className={classes.weather_info}>
-            <li className={classes.weather_item}>
-              <span>
+          <ul className={`${classes.info} ${classes.display}`}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
+              <span className={classes.display}>
                 <TbTemperature />
                 {' '}
                 Temperature:
@@ -57,7 +57,7 @@ const Details = () => {
                 &#8451;
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <TbTemperature />
                 {' '}
@@ -69,7 +69,7 @@ const Details = () => {
                 &#8451;
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <TbTemperatureMinus />
                 {' '}
@@ -81,7 +81,7 @@ const Details = () => {
                 &#8451;
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <TbTemperaturePlus />
                 {' '}
@@ -89,7 +89,7 @@ const Details = () => {
               </span>
               <span>{weather.temp_max}</span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <GiPressureCooker />
                 {' '}
@@ -100,7 +100,7 @@ const Details = () => {
                 &#13169;
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <WiHumidity />
                 {' '}
@@ -112,7 +112,7 @@ const Details = () => {
                 %
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <FaWind />
                 {' '}
@@ -124,7 +124,7 @@ const Details = () => {
                 meter/sec
               </span>
             </li>
-            <li className={classes.weather_item}>
+            <li className={`${classes.weather_item} ${classes.display}`}>
               <span>
                 <FaCloud />
                 {' '}
