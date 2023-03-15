@@ -41,11 +41,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->
+- [Live Demo Link](https://weatherapp-lvo9.onrender.com)
 
 ## 🚀 Loom Video <a name="loom-video"></a>
 
->
+- [Loom Video Link](https://www.loom.com/share/9cc0d9045f8f485db1677211e28174f1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

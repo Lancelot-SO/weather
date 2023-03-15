@@ -23,7 +23,7 @@ const Countries = () => {
   return (
     <div className={classes.container}>
       <div className={classes.region_option}>
-        <p>Filter by Region</p>
+        <p>Filter by Continent</p>
         <select value={currentRegion} onChange={regionChangeHandler}>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
